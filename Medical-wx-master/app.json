@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/physiclist/physiclist",
+    "pages/homepage/homepage",
+    "pages/mycenter/mycenter",
+    "pages/aboutus/aboutus",
+    "pages/addinfo/addinfo",
+    "pages/addpeople/addpeople",
+    "pages/detail/detail",
+    "pages/accordion/accordion",
+    "pages/order/order",
+    "pages/index/index",
+    "pages/inquiry/inquiry",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#196db6",
+    "navigationBarTitleText": "云南省就医预约系统",
+    "navigationBarTextStyle": "light"
+  }
+}

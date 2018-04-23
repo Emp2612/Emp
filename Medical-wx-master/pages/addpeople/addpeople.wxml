@@ -1,0 +1,23 @@
+<!--pages/addpeople/addpeople.wxml-->
+<view class='page'>
+  <view class='title'>
+    <image class='title-icon' src='../../images/addpeople.png' style='width: 31rpx;height: 34rpx;margin-right: 10rpx;'></image>
+    <text>新增就诊人</text>
+    <text class='title-notes'>（已有就诊人数3位）</text>
+  </view>
+  <view class='line'></view>
+  <view class='masinfo'>
+    <image class='infoimg' src='../../images/farther.png' mode='aspectFill' style='width: 125rpx;height: 176rpx'></image>
+    <text class='infotitle'>父亲</text>
+    <text class='infosex'>男</text>
+    <text class='infosex' style='padding-left:470rpx;'>35岁</text>
+    <text class='infosex' style='padding-top:60rpx;padding-left: 220rpx;'>18088608866</text>
+    <text class='infosex' style='padding-top:100rpx;padding-left: 220rpx;'>53032219896669121x</text>
+    <text class='infosex' style='padding-top:150rpx;padding-left: 205rpx;'>（注：2018-12-10在昆明市第一人民医院就诊）</text>
+    <view class='line' style='padding-top:220rpx'></view>
+  </view>
+  <view class='emptyhint'>
+    <text>温馨提示：</text>
+    <text style='padding-top: 10rpx;'>您还没有家庭成员就诊记录</text>
+  </view>
+</view>

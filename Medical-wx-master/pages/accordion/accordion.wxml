@@ -1,0 +1,112 @@
+<!--pages/accordion/accordion.wxml-->
+<view class='page'>
+  <view class="item{{isShowFrom1 ? '' : ''}}">
+    <view bindtap="showFrom" data-param="1">
+      <view class="item-btn">222</view>
+    </view>
+    <view class="spanpage {{isShowFrom1 ? '' : 'tui-hide'}}">
+      <view class='spanpage-title-ss'>
+        <text class='spanpage-title'>2018-04-20</text>
+        <text class='spanpage-title'>可预约：222</text>
+      </view>
+      <view class='spanpage-line'></view>
+      <radio-group class='spanpage-radio' bindchange="radioChange">
+        <label>
+          <radio value="{{index}}">
+            <view>08:00-12:00</view>
+          </radio>
+        </label>
+        <label>
+          <radio value="{{index}}">
+            <view>14:00-18:00</view>
+          </radio>
+        </label>
+      </radio-group>
+      <view class='spanpage-btn'>
+        <text class='spanpage-btn-text' style='padding-top:30rpx;'>预约</text>
+      </view>
+    </view>
+  </view>
+  <!-- 坐诊日期btn -->
+  <!-- <view class='item'>
+    <text class='item-title'>坐诊日程（一周）</text>
+    <view class="item-btn-ss {{isShowFrom1 ? 'tui-shangjiantou' : 'tui-xiajiantou'}}">
+      <view bindtap="showFrom" data-param="1">
+        <view class='item-btn'>
+          <view class='statemodel'>
+            <text class='item-btn-time' style='font-size:25rpx;'>星期一</text>
+            <text class='item-btn-time' style='font-size:28rpx;'>全</text>
+          </view>
+          <text class='item-btn-time'>2018-04-16</text>
+          <view class='triangle-position'>
+            <view class='triangle'></view>
+          </view>
+        </view>
+        <view class="spanpage {{isShowFrom1 ? '' : 'tui-hide'}}">
+          <view class='spanpage-title-ss'>
+            <text class='spanpage-title'>2018-04-20</text>
+            <text class='spanpage-title'>可预约：222</text>
+          </view>
+          <view class='spanpage-line'></view>
+          <radio-group class='spanpage-radio' bindchange="radioChange">
+            <label>
+              <radio value="{{index}}">
+                <view>08:00-12:00</view>
+              </radio>
+            </label>
+            <label>
+              <radio value="{{index}}">
+                <view>14:00-18:00</view>
+              </radio>
+            </label>
+          </radio-group>
+          <view class='spanpage-btn'>
+            <text class='spanpage-btn-text' style='padding-top:30rpx;'>预约</text>
+          </view>
+        </view>
+      </view> -->
+  <!-- <view class=' item-btn '>
+        <view class='statemodel'>
+          <text class='item-btn-time' style='font-size:25rpx;'>星期二</text>
+          <text class='item-btn-time' style='font-size:28rpx;color:#ff3333;'>满</text>
+        </view>
+        <text class='item-btn-time'>2018-04-17</text>
+        <view class='triangle-position'>
+          <view class='triangle'></view>
+        </view>
+      </view>
+      <view class='item-btn '>
+        <view class='statemodel'>
+          <text class='item-btn-time' style='font-size:25rpx;'>星期三</text>
+          <text class='item-btn-time' style='font-size:28rpx;color:#ff3333;'>满</text>
+        </view>
+        <text class='item-btn-time'>2018-04-18</text>
+        <view class='triangle-position'>
+          <view class='triangle'></view>
+        </view>
+      </view>
+      <view class='item-btn '>
+        <view class='statemodel'>
+          <text class='item-btn-time' style='font-size:25rpx;'>星期四</text>
+          <text class='item-btn-time' style='font-size:28rpx;'>全</text>
+        </view>
+        <text class='item-btn-time'>2018-04-19</text>
+        <view class='triangle-position'>
+          <view class='triangle'></view>
+        </view>
+      </view>
+      <view class='item-btn'>
+        <view class='statemodel'>
+          <text class='item-btn-time' style='font-size:25rpx;'>星期五</text>
+          <text class='item-btn-time' style='font-size:28rpx;'>全</text>
+        </view>
+        <text class='item-btn-time'>2018-04-20</text>
+        <view class='triangle-position'>
+          <view class='triangle'></view>
+        </view>
+      </view> -->
+  <!-- </view>
+  </view> -->
+  <!-- 预约弹窗 -->
+
+</view>

@@ -1,0 +1,35 @@
+<!--pages/order/order.wxml-->
+<view class="page">
+<scroll-view scroll-y='true' style="height: 100%"> 
+ <view class='search-icon'>
+       <image style='width: 38rpx;height:38rpx;' src='../../images/search.png'></image> 
+    </view>
+     <input class="search" name="searchName" placeholder="请输入医院、科室或专家" bindinput="searchNameInput">
+    </input> 
+  <view class='itemView'>期望就诊城市:
+    <picker bindchange='bindCasPickerChange' value='{{casIndex1}}' range="{{casArray}}">
+      <view>
+        <text class='select-picker'>{{casArray[casIndex]}}</text>
+      </view>
+    </picker>
+  </view>
+
+  <view class='itemView'>期望就诊医院:
+    <picker bindchange='bindCasPickerChange' value='{{casIndex}}' range="{{casArray1}}">
+      <view>
+        <text class='select-picker'>{{casArray[casIndex]}}</text>
+      </view>
+    </picker>
+  </view>
+  <view class='itemView'>期望就诊科室:
+    <picker bindchange='bindCasPickerChange' value='{{casIndex}}' range="{{casArray2}}">
+      <view>
+        <text class='select-picker'>{{casArray[casIndex]}}</text>
+      </view>
+    </picker>
+  </view>
+  <view class='sbmbtn' style="letter-spacing: 18rpx;" bindtap='submitItems'>
+    <button style="background-color: #30c4a3;border-radius: 25rpx;color:#fff;font-family: Microsoft YaHei ;" type='sbmbtn' form-type='submit'>预约挂号</button>
+  </view>
+</scroll-view>
+</view>
